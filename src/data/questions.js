@@ -1,0 +1,107 @@
+export const questions = [
+  {
+    id: 'name',
+    type: 'text',
+    question: "What's your name?",
+    subtitle: "Optional — but Mags loves knowing who she's talking to!",
+    placeholder: "Your name",
+    optional: true,
+    showIf: () => true,
+  },
+  {
+    id: 'email',
+    type: 'text',
+    question: "Want to stay in the loop?",
+    subtitle: "Optional — drop your email for mustard updates & launch news!",
+    placeholder: "your@email.com",
+    optional: true,
+    showIf: () => true,
+  },
+  {
+    id: 'likesMustard',
+    type: 'single-select',
+    question: "First things first... Are you Team Mustard?",
+    options: [
+      { value: 'Yes', label: "Yes! I'm a certified mustard lover 🟡" },
+      { value: 'No', label: "Nope, not my thing (yet!)" },
+    ],
+    showIf: () => true,
+  },
+  {
+    id: 'favouriteType',
+    type: 'single-select',
+    question: "What's your mustard personality?",
+    options: [
+      { value: 'English', label: 'English (the hot stuff! 🔥)' },
+      { value: 'Dijon', label: 'Dijon (ooh la la 🇫🇷)' },
+      { value: 'Wholegrain', label: 'Wholegrain (chunky & rustic)' },
+      { value: 'American', label: 'American Yellow (ballpark classic 🌭)' },
+      { value: 'Honey', label: 'Honey Mustard (sweet meets tangy)' },
+    ],
+    hasOther: true,
+    showIf: (answers) => answers.likesMustard === 'Yes',
+  },
+  {
+    id: 'frequency',
+    type: 'single-select',
+    question: "How deep is your mustard obsession?",
+    options: [
+      { value: 'Daily', label: 'Daily — mustard is a lifestyle' },
+      { value: 'Weekly', label: 'Weekly — a regular in my rotation' },
+      { value: 'Monthly', label: 'Monthly — for the right occasion' },
+      { value: 'Rarely', label: 'Rarely — but when I do, it counts' },
+    ],
+    showIf: (answers) => answers.likesMustard === 'Yes',
+  },
+  {
+    id: 'favouriteBrand',
+    type: 'text',
+    question: "Got a ride-or-die mustard brand? Tell us about it!",
+    placeholder: "Spill the tea (or should we say... mustard)",
+    showIf: (answers) => answers.likesMustard === 'Yes',
+  },
+  {
+    id: 'favouriteUse',
+    type: 'text',
+    question: "What's your go-to mustard move? Any weird & wonderful uses?",
+    placeholder: "No judgement zone — get creative!",
+    showIf: (answers) => answers.likesMustard === 'Yes',
+  },
+  {
+    id: 'flavoursToTry',
+    type: 'multi-select',
+    question: "What should Mags cook up next? 🧪",
+    subtitle: "Pick all the flavour vibes that excite you!",
+    options: [
+      { value: 'Sweet', label: 'Sweet (honey, maple, fruit)' },
+      { value: 'Spicy', label: 'Spicy (chilli, jalapeño, sriracha)' },
+      { value: 'Smoky', label: 'Smoky (BBQ, chipotle)' },
+      { value: 'Herby', label: 'Herby (dill, tarragon, basil)' },
+      { value: 'Tangy', label: 'Tangy (citrus, pickle-y)' },
+      { value: 'Hot', label: 'Hot (extra horseradish energy)' },
+      { value: 'Experimental', label: 'Experimental (surprise me!)' },
+    ],
+    hasOther: true,
+    showIf: (answers) => answers.likesMustard === 'Yes',
+  },
+  {
+    id: 'whyDislike',
+    type: 'multi-select',
+    question: "No shade! What's putting you off the yellow stuff?",
+    subtitle: "This helps Mags understand different tastes — maybe she can win you over!",
+    options: [
+      { value: 'TooSpicy', label: 'Too spicy / burns my mouth' },
+      { value: 'TooSour', label: 'Too sour / vinegary' },
+      { value: 'TooStrong', label: 'Too strong / overpowering' },
+      { value: 'DontKnowHow', label: "Don't know what to put it on" },
+      { value: 'Taste', label: 'Just not my flavour' },
+      { value: 'Texture', label: 'The texture weirds me out' },
+    ],
+    hasOther: true,
+    showIf: (answers) => answers.likesMustard === 'No',
+  },
+];
+
+export function getVisibleQuestions(answers) {
+  return questions.filter((q) => q.showIf(answers));
+}
