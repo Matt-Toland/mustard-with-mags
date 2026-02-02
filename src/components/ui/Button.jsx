@@ -11,29 +11,29 @@ export function Button({
     px-8 py-4 rounded-full font-display font-bold text-lg
     transition-all duration-100 ease-out
     disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none
-    focus:outline-none focus:ring-4 focus:ring-mustard-bright/40
+    focus:outline-none focus:ring-4 focus:ring-blue-bright/40
   `;
 
   const variants = {
     primary: `
-      bg-mustard-bright text-charcoal
+      bg-blue-bright text-white
       border-3 border-charcoal
       shadow-[4px_4px_0_0_#2B2B2B]
       hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_0_#2B2B2B]
       active:translate-x-[2px] active:translate-y-[2px] active:shadow-[0px_0px_0_0_#2B2B2B]
     `,
     secondary: `
-      bg-cream text-charcoal
+      bg-ice text-charcoal
       border-3 border-charcoal
       shadow-[4px_4px_0_0_#2B2B2B]
       hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_0_#2B2B2B]
       active:translate-x-[2px] active:translate-y-[2px] active:shadow-[0px_0px_0_0_#2B2B2B]
     `,
     ghost: `
-      bg-transparent text-brown-medium
+      bg-transparent text-slate-medium
       border-2 border-transparent
-      hover:text-charcoal hover:bg-mustard-bright/20
-      active:bg-mustard-bright/30
+      hover:text-charcoal hover:bg-blue-bright/20
+      active:bg-blue-bright/30
     `,
   };
 

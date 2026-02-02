@@ -14,8 +14,8 @@ export function ProgressBar({ currentStep, totalSteps }) {
             className={`
               transition-all duration-300 ease-out
               ${i <= currentStep
-                ? 'w-5 h-5 bg-mustard-bright border-2 border-charcoal scale-110'
-                : 'w-4 h-4 bg-cream-dark border-2 border-brown-medium'
+                ? 'w-5 h-5 bg-blue-bright border-2 border-charcoal scale-110'
+                : 'w-4 h-4 bg-ice-dark border-2 border-slate-medium'
               }
             `}
             style={{

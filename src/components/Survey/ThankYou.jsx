@@ -9,7 +9,7 @@ export function ThankYou({ onReset }) {
     const duration = 3000;
     const end = Date.now() + duration;
 
-    const colors = ['#FFD000', '#C9A000', '#D64045', '#2B2B2B'];
+    const colors = ['#6BA3D6', '#A8CBE6', '#D64045', '#2B2B2B'];
 
     const frame = () => {
       confetti({
@@ -52,20 +52,20 @@ export function ThankYou({ onReset }) {
           You did it!
         </h2>
 
-        <p className="font-display text-xl text-brown-medium mb-6">
-          You're officially a <span className="text-mustard-dark">★ MUSTARD-TEER ★</span>
+        <p className="font-display text-xl text-slate-medium mb-6">
+          You're officially a <span className="text-blue-dark">★ MUSTARD-TEER ★</span>
         </p>
 
-        <p className="font-body text-brown-medium mb-6">
+        <p className="font-body text-slate-medium mb-6">
           Thanks for helping Mags make mustard dreams come true!
           Your feedback is pure gold (the mustard kind).
         </p>
 
-        <div className="bg-mustard-bright border-3 border-charcoal rounded-2xl p-4 mb-8 shadow-[4px_4px_0_0_#2B2B2B]">
-          <p className="font-display text-charcoal text-lg">
-            🟡 2026 is gonna be SAUCY 🟡
+        <div className="bg-blue-bright border-3 border-charcoal rounded-2xl p-4 mb-8 shadow-[4px_4px_0_0_#2B2B2B]">
+          <p className="font-display text-white text-lg">
+            2026 is gonna be SAUCY
           </p>
-          <p className="font-body text-sm text-charcoal/70 mt-1">
+          <p className="font-body text-sm text-white/70 mt-1">
             Stay tuned for updates...
           </p>
         </div>

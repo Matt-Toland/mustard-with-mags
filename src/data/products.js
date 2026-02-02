@@ -1,0 +1,35 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Classic Yellow',
+    description: 'The one that started it all. Smooth, tangy, and perfect on everything from hot dogs to deviled eggs.',
+    status: 'Available',
+    image: '/assets/mustard_jar_plain.png',
+    imageScale: 1,
+  },
+  {
+    id: 2,
+    name: 'Honey Dijon',
+    description: 'A sweet-meets-heat blend with local honey and whole grain mustard seeds. Salad dressings will never be the same.',
+    status: 'Available',
+    image: '/assets/Mustard_jar_honey_dijon.png',
+    imageScale: 1.5,
+  },
+  {
+    id: 3,
+    name: 'Wholegrain',
+    description: 'Coarse-ground with a rustic bite. Made for deli sandwiches, pretzels, and people who like real texture.',
+    status: 'Available',
+    image: '/assets/mustard_jar_wholegrain.png',
+    imageScale: 1.5,
+  },
+  {
+    id: 4,
+    name: 'Miso Mustard',
+    description: 'White miso meets whole grain mustard in this umami-packed twist. Perfect on salmon, roast veg, or straight off the spoon.',
+    status: 'Coming Soon',
+    image: '/assets/Mustard_jar_honey_dijon.png',
+    imageScale: 1.5,
+    comingSoon: true,
+  },
+];

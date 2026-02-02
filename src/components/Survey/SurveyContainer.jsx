@@ -13,23 +13,23 @@ function WelcomeScreen({ onStart }) {
     <div className="w-full max-w-2xl mx-auto px-4">
       <Card className="text-center">
         <div className="mb-6">
-          <span className="text-6xl">🟡</span>
+          <span className="text-6xl">💙</span>
         </div>
         <h1 className="font-display text-4xl md:text-5xl text-charcoal mb-4">
           Mustard by Mags
         </h1>
-        <div className="w-24 h-1 bg-mustard-bright mx-auto mb-6 rounded-full" />
-        <p className="font-display text-xl md:text-2xl text-brown-medium mb-2">
+        <div className="w-24 h-1 bg-blue-bright mx-auto mb-6 rounded-full" />
+        <p className="font-display text-xl md:text-2xl text-slate-medium mb-2">
           Help shape the condiment revolution of 2026!
         </p>
-        <p className="font-body text-brown-medium mb-8">
+        <p className="font-body text-slate-medium mb-8">
           ~2 minutes • Your answers = better mustard
         </p>
 
         {/* Mobile-only: Show the hero image on welcome */}
         <div className="lg:hidden mb-8">
           <img
-            src="/assets/MustardByMags1.png"
+            src="/assets/mags_holding_mustard.png"
             alt="Mags holding jars of homemade mustard"
             className="w-full max-w-xs mx-auto rounded-2xl border-3 border-charcoal shadow-[4px_4px_0_0_#2B2B2B]"
           />
@@ -115,7 +115,7 @@ export function SurveyContainer() {
         </h2>
 
         {currentQuestion.subtitle && (
-          <p className="font-body text-brown-medium mb-6">
+          <p className="font-body text-slate-medium mb-6">
             {currentQuestion.subtitle}
           </p>
         )}

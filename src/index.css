@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* Bolder colors - Artisanal Chaos palette */
-  --color-mustard-bright: #FFD000;
-  --color-mustard: #FFDB58;
-  --color-mustard-dark: #C9A000;
-  --color-dijon: #BB8C00;
+  /* Artisan Blue palette */
+  --color-blue-bright: #6BA3D6;
+  --color-blue-soft: #A8CBE6;
+  --color-blue-dark: #4A7FAF;
+  --color-blue-deep: #3A6B96;
   --color-charcoal: #2B2B2B;
   --color-charcoal-light: #4A4A4A;
-  --color-brown-dark: #2D1810;
-  --color-brown: #3D2314;
-  --color-brown-medium: #5C4033;
-  --color-cream: #FFF8E7;
-  --color-cream-dark: #F5E6C8;
-  --color-cream-card: #FFFDF7;
+  --color-slate-dark: #2C3E50;
+  --color-slate: #34495E;
+  --color-slate-medium: #5D6D7E;
+  --color-ice: #F0F4F8;
+  --color-ice-dark: #DDE5ED;
+  --color-ice-card: #F7F9FC;
   --color-red-pop: #D64045;
   --color-green-fresh: #4A7C59;
 
@@ -28,9 +28,9 @@ body {
   color: var(--color-charcoal);
   margin: 0;
   min-height: 100vh;
-  /* Yellow-energy gradient background */
+  /* Faint blue gradient background */
   background:
-    linear-gradient(135deg, #FFF8E7 0%, #FFE4A0 40%, #FFF8E7 100%);
+    linear-gradient(135deg, #F0F4F8 0%, #D6E4F0 40%, #F0F4F8 100%);
 }
 
 /* Grain texture overlay for artisanal feel */

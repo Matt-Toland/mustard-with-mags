@@ -22,7 +22,7 @@ export const questions = [
     type: 'single-select',
     question: "First things first... Are you Team Mustard?",
     options: [
-      { value: 'Yes', label: "Yes! I'm a certified mustard lover 🟡" },
+      { value: 'Yes', label: "Yes! I'm a certified mustard lover" },
       { value: 'No', label: "Nope, not my thing (yet!)" },
     ],
     showIf: () => true,

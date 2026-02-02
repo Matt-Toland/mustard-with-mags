@@ -1,11 +1,11 @@
 export function TextInput({ question, value = '', onChange }) {
   const inputClasses = `
     w-full p-4 rounded-2xl
-    border-2 border-brown-medium
-    bg-cream
+    border-2 border-slate-medium
+    bg-ice
     font-body text-charcoal text-lg
-    placeholder:text-brown-medium/60
-    focus:outline-none focus:border-charcoal focus:bg-cream-dark
+    placeholder:text-slate-medium/60
+    focus:outline-none focus:border-charcoal focus:bg-ice-dark
     focus:shadow-[inset_0_2px_4px_rgba(45,24,16,0.1)]
     transition-all duration-200
   `;
